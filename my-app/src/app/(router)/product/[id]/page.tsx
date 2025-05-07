@@ -16,7 +16,7 @@ import {
 } from "lucide-react"
 
 import { useParams } from "next/navigation"
-import Productscard from "../../(home)/productsCard"
+import Productscard from "../../productsCard"
 import { useAtom } from "jotai"
 import { products } from "@/entities/store"
 export default function InfoPage() {
@@ -30,7 +30,7 @@ export default function InfoPage() {
 
   // Fix: Get the first item from the filtered array
   const productArray = productses.filter((e: any) => e.id == id)
-  let product = productArray[0] || null
+  let product:any = productArray[0] || null
 
   // Loading state if product is not found
   if (!product) {
@@ -44,7 +44,6 @@ export default function InfoPage() {
     )
   }
 
-  // Ensure product has all required properties with defaults
   const productWithDefaults = {
     brand: product.brand || product.brend || "Unknown",
     processor: product.processor || "Not specified",
@@ -62,7 +61,6 @@ export default function InfoPage() {
     ...product,
   }
 
-  // Use the product with defaults
   product = productWithDefaults
 
   const features = [

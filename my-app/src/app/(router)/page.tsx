@@ -25,7 +25,7 @@ import { useTranslation } from "react-i18next";
 import Productscard from "./productsCard";
 import { Input } from "@/components/ui/input";
 import { useAtom } from "jotai";
-import {Brand, products} from '../../../entities/store'
+import { Brand, products } from "@/entities/store";
 
 const Home = () => {
   let [brend,setbrend] =useAtom(Brand) 

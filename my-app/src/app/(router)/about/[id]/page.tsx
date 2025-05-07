@@ -21,7 +21,7 @@ import {
 import Link from "next/link"
 import { useParams } from "next/navigation"
 import { useState } from "react"
-import Productscard from "../../(home)/productsCard"
+import Productscard from "../../productsCard"
 import { useAtom } from "jotai"
 import { Brand, products } from "@/entities/store"
 

@@ -11,8 +11,8 @@ import {
   Info,
   Star,
 } from "lucide-react";
-import {addProductToCart} from '../../../../cart'
-import {addToFavorites} from '../../../../favorite'
+import {addProductToCart} from "../../../cart"
+import {addToFavorites} from '../../../favorite'
 import Link from "next/link";
 interface ProductData {
   id: string;
